@@ -1,0 +1,43 @@
+
+form{
+    width: 100%;
+}
+
+input{
+    border-radius: 10px 0px 0px 10px;
+    padding: 8px;
+    border: gray;
+    margin: 1%;
+    width: 78%;
+    margin-left: 5%;
+    display: inline;
+}
+
+button{
+    margin-right: 5%;
+    width: 10%;
+    color: #0c88b9;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+    padding: 8px;
+    border: gray;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    button{
+        width: 27%;
+        font-size: 0.8rem;
+        padding: 4px;
+        margin-left: 1%;
+    }
+    input{
+        width: 60%;
+        padding: 4px;
+        font-size: 0.8rem;
+        margin-right: 1%;
+    }
+}

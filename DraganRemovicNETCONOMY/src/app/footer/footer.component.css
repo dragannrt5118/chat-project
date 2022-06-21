@@ -1,0 +1,30 @@
+footer{
+    background-color: #2d2d2d;
+    width: 100%;
+}
+
+img{
+    width: 14rem;
+    height: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    font-weight: bold;
+}
+
+.linkIcon{
+    border-radius: 60px;
+    box-shadow: 0 0 2px #888;
+    padding: 0.5em 0.6em;
+    color: white;
+}
+
+.linkIcon:hover{
+    background-color: white;
+    color: #292828;
+}

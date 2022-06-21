@@ -1,0 +1,19 @@
+<div *ngFor="let user of userList; let i = index" (click)="sendMessage(i)" >
+    <div class="card flex-row userChat" 
+    [ngClass]="{'active': clickedIndex == i}" 
+    (click)="clickedIndex == i? clickedIndex = null : clickedIndex = i">
+      <img
+        class="card-img-left example-card-img-responsive"
+        src="{{ user.picture_data.src }}"
+        alt="{{ user.picture_data.src.alt }}"
+      />
+      <div class="card-body">
+        <h5 class="card-title h5 h4-sm">
+          {{ user.name }}
+        </h5>
+        <p class="card-text">
+          <i>{{ user.status }}</i>
+        </p>
+      </div>
+    </div>
+</div>

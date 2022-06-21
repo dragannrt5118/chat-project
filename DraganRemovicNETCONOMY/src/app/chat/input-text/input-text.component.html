@@ -1,0 +1,5 @@
+<form>
+        <input #msgInput type="text">     
+        <button (click)="NewMessage(msgInput.value);false;msgInput.value='';" type="button">Send</button>
+</form>
+

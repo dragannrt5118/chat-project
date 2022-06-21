@@ -1,0 +1,22 @@
+<ng-container *ngIf="messageContent">
+    <div *ngFor="let item of messageContent.messages; let last = last" [ngClass]="{'last-child': last}" #messages>
+      <div class="right" *ngIf="item.type == 'sent'">
+        <span>{{ item.content }}</span>
+        <span style="display: block;text-align: right;">{{ item.time | date:'shortTime'}}</span>
+      </div>
+
+      <div class="left" *ngIf="item.type == 'received'">
+        <span style="display: block;">{{ item.content }}</span>
+          <span style="display: block;text-align: right;">{{ item.time | date:'shortTime'}}</span>
+      </div>
+    </div>
+    <div class="inputBox">
+          <app-input-text (childParent)="parent($event)"></app-input-text>
+    </div>
+  </ng-container>
+  
+  <ng-container *ngIf="!messageContent">
+    <div class="message">
+      <h5>Please select chat to start conversation</h5>
+    </div>
+  </ng-container>
